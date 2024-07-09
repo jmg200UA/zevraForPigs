@@ -1,0 +1,154 @@
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Gluten:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Gluten:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+//Fondo animado
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #FF4977 50%, #F2E205 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+//Cartas apartados
+.cartas{
+  margin-top: 50px;
+  box-shadow: 10px 30px 25px #29235C;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e9a3d6;
+  border: 3px solid #f6ff00;
+}
+
+.cardtit{
+  font-size: 27px;
+  font-weight: bold;
+  color: #290965;
+  font-family: 'Lilita One', cursive;
+  font-style: bold;
+  font-weight: 400;
+}
+
+.cartas:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #290965;
+  border: 3px solid #f6ff00;
+
+}
+.cartas:hover .cardtit{
+  color: #e9a3d6;
+}
+
+.divcartas{
+  margin-top: 50px;
+}
+
+ion-card{
+  height: 110px;
+  margin-top: 30px;
+}
+
+//Footer
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+//Toolbar header
+.toolbar{
+  // background-color: #fff;
+  // color:rgb(15, 3, 44);
+  color: #69409E;
+  position: relative;
+  animation: slideIn 1s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.title{
+  font-size:45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-family: lobster, sans-serif !important;
+  box-shadow: 10px 10px 10px #29235C;
+  border: 2px solid #29235C;
+  height: 50px;
+  background-color: rgb(255, 0, 234);
+}
+
+.marca {
+  font-size: 30px; /* Tamaño de fuente del símbolo */
+  color: #ffffff; /* Color del símbolo */
+  vertical-align: middle; /* Alinear verticalmente con el texto */
+  margin-left: -5px; /* Espacio entre el título y el símbolo */
+  font-family: lobster, sans-serif;
+
+  //contorno
+  -webkit-text-stroke: 0px;
+}
+
+.fecha{
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Lilita One', cursive;
+  // color: #d4ff00;
+  // color: transparent;
+  // -webkit-text-fill-color: #d4ff00; /* Relleno blanco (para navegadores basados en WebKit) */
+  // -webkit-text-stroke-width: 0.8px; /* Ancho del borde */
+  // -webkit-text-stroke-color: #000; /* Color del borde (para navegadores basados en WebKit) */
+}
+
+ion-footer {
+  --ion-background-color: rgb(255, 0, 234);
+  --ion-text-color: white;
+}
+
+ion-header {
+  --ion-background-color: rgb(255, 0, 234);
+  --ion-text-color: white;
+}

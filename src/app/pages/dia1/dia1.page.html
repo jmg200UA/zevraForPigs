@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center title">
+      DÍA 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Fondo animado -->
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="col" size="6"  *ngFor="let cantante of cantantes">
+        <ion-card class="cardartista col" (click)="cambiarCantante(cantante.title)">
+          <ion-card-header class="round-image">
+            <ion-img [src]="cantante.image" class="round-image imagen-cantante"></ion-img>
+          </ion-card-header>
+          <ion-card-content class="nomcantante">
+            {{ cantante.title }}
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<img class="imagenojo" src="https://i0.wp.com/boombasticfestival.com/wp-content/uploads/2022/03/separador.png?resize=768%2C79&ssl=1" alt="separador">
+<!-- Footer -->
+<ion-footer class="custom-footer">
+  <ion-toolbar>
+    <div class="footer-content">
+      <p><small>© 2023 ZevraForPigs. All rights reserved.</small></p>
+    </div>
+  </ion-toolbar>
+</ion-footer>
