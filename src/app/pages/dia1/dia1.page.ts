@@ -30,13 +30,9 @@ export class Dia1Page implements OnInit {
     { title: 'Dj Nano', image: 'https://img.europapress.es/fotoweb/fotonoticia_20190613085942_1200.jpg' },
     { title: 'Lucho Rk', image: 'https://photos.bandsintown.com/large/16427591.jpeg' },
     { title: 'Pol 3.14', image: 'https://static.wixstatic.com/media/c5417b_798a6f0c7f3341b6ad30816e476c9e52~mv2.jpeg/v1/fill/w_560,h_472,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Cartel.jpeg' },
-    { title: 'Bon Calso', image: 'https://www.mondosonoro.com/wp-content/uploads/2022/03/bon-calso.jpg' },
-    { title: 'Depol', image: 'https://static.wixstatic.com/media/839e94_7c802ad259ed4d7aaa4789fd5da8a30a~mv2.jpg/v1/fill/w_1000,h_1000,al_c,q_85,usm_0.66_1.00_0.01/839e94_7c802ad259ed4d7aaa4789fd5da8a30a~mv2.jpg' },
-    { title: 'Paula Cendejas', image: 'https://cdn.industriaworks.com/wp-content/uploads/sites/2/2021/06/PaulaCendejas.webp' },
-    { title: 'Acereda', image: 'https://i.scdn.co/image/ab6761610000e5eb6a02112f479e2be2eeeb6431' },
-    { title: 'Izan Llunas', image: 'https://s2.abcstatics.com/abc/www/multimedia/espana/2022/12/29/Izan_20221229182802-R3Z1ruVLvIPegZhGw0op2cO-1200x840@abc.jpg' },
-    { title: 'Almacor', image: 'https://i0.wp.com/loblanc.info/wp-content/uploads/2021/03/almacor.jpg?fit=300%2C200&ssl=1' },
-  ];
+    { title: 'Raul Clyde', image: 'https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2024/04/18/17134339450667.jpg' },
+    { title: 'Vicco', image: 'https://image.europafm.com/clipping/cmsimages02/2023/01/26/94E2DE18-6586-42B2-ADF7-3CB129179697/vicco_104.jpg?crop=1277,1277,x324,y0&width=1200&height=1200&optimize=low&format=webply' },
+     ];
 
 
   //Funcion para cambiar el valor del cantante al seleccionarlo para poderlo pasar por parámetro
