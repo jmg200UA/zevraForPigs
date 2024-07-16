@@ -8,11 +8,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.cdnfonts.com/css/alphabetsoup');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 //Fondo animado
 .bg {
   animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #FF4977 50%, #F2E205 50%);
+  background-image: linear-gradient(45deg, rgb(0 196 245), #ff2a7e);
   bottom:0;
   left:-50%;
   opacity:.5;
@@ -42,33 +45,36 @@
 
 //Cartas apartados
 .cartas{
+  font-family: 'Alphabet-Soup';
   margin-top: 50px;
-  box-shadow: 10px 30px 25px #29235C;
+  box-shadow: 2px 2px #dd3679;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #e9a3d6;
-  border: 3px solid #f6ff00;
+  background-color: white;
+  border: 3px solid #dd3679;
+  transition: all .5s ease-in-out;
 }
 
 .cardtit{
   font-size: 27px;
   font-weight: bold;
-  color: #290965;
+  color: #dd3679;
   font-family: 'Lilita One', cursive;
   font-style: bold;
   font-weight: 400;
 }
 
 .cartas:hover{
-  transform: scale(1.05);
   cursor: pointer;
-  background-color: #290965;
-  border: 3px solid #f6ff00;
+  background-color: #dd3679;
 
 }
 .cartas:hover .cardtit{
-  color: #e9a3d6;
+  color: white;
+}
+.cartas:hover .fecha{
+  color: white;
 }
 
 .divcartas{
@@ -107,35 +113,43 @@ ion-card{
 }
 
 .title{
-  font-size:45px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255);
-  font-weight: bolder;
-  font-family: lobster, sans-serif !important;
-  box-shadow: 10px 10px 10px #29235C;
-  border: 2px solid #29235C;
-  height: 50px;
-  background-color: rgb(255, 0, 234);
+  font-family: 'Bangers', sans-serif;
+  font-size: 45px;
+  color: #ff2a7e;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 #000; /* Efecto de contorno */
 }
+
+.title::after {
+  content: 'ZevraForPigs';
+  position: absolute;
+  top: -20%;
+  z-index: -1;
+  opacity: 1;
+  color: rgb(0 196 245);
+  transform: translate(5px, 5px);
+}
+
 
 .marca {
   font-size: 30px; /* Tamaño de fuente del símbolo */
   color: #ffffff; /* Color del símbolo */
-  vertical-align: middle; /* Alinear verticalmente con el texto */
-  margin-left: -5px; /* Espacio entre el título y el símbolo */
   font-family: lobster, sans-serif;
-
+  margin-left: 10px;
   //contorno
   -webkit-text-stroke: 0px;
 }
 
 .fecha{
-  color: #ffffff;
+  color: #d63384;
   font-size: 20px;
-  font-family: 'Lilita One', cursive;
+  font-family: 'Barlow-Regular';
   // color: #d4ff00;
   // color: transparent;
   // -webkit-text-fill-color: #d4ff00; /* Relleno blanco (para navegadores basados en WebKit) */
@@ -144,11 +158,11 @@ ion-card{
 }
 
 ion-footer {
-  --ion-background-color: rgb(255, 0, 234);
+  --ion-background-color: #d63384;
   --ion-text-color: white;
 }
 
 ion-header {
-  --ion-background-color: rgb(255, 0, 234);
+  --ion-background-color: #d63384;
   --ion-text-color: white;
 }
